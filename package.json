@@ -1,36 +1,44 @@
 {
   "name": "mongoose-queue",
-  "version": "0.3.1",
+  "version": "1.0.0",
   "description": "A simple queue using mongoose.",
   "main": "index.js",
   "scripts": {
-    "test": "./node_modules/.bin/mocha --reporter spec --recursive",
-    "coverage": "./node_modules/.bin/istanbul cover ./node_modules/.bin/_mocha --recursive"
+    "test": "./node_modules/.bin/mocha --reporter spec --recursive --timeout 120000",
+    "coverage": "./node_modules/.bin/istanbul cover ./node_modules/.bin/_mocha --recursive",
+    "lint": "./node_modules/.bin/eslint ./lib/mongoose-queue.js"
   },
   "keywords": [
     "mongoose",
     "mongodb",
     "queue"
   ],
-  "author": "Christian Kuhn <c.kuhn@qn-solutions.de> (http://www.qn-solutions.de)",
+  "authors": [
+    "Christian Kuhn <c.kuhn@qn-solutions.de> (http://www.qn-solutions.de)",
+    "Vitaliy Isikov <visikov@gmail.com>"
+  ],
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/QN-Solutions/MongooseQueue.git"
+    "url": "https://github.com/notVitaliy/MongooseQueue.git"
   },
   "bugs": {
-    "url": "https://github.com/QN-Solutions/MongooseQueue/issues"
+    "url": "https://github.com/notVitaliy/MongooseQueue/issues"
   },
-  "homepage": "https://github.com/QN-Solutions/MongooseQueue",
+  "homepage": "https://github.com/notVitaliy/MongooseQueue",
   "dependencies": {
-    "mongoose": "^4.5.8",
-    "underscore": "^1.8.3"
+    "mongoose": "^4.5.8"
   },
   "devDependencies": {
-    "bluebird": "^3.4.1",
     "chai": "^3.5.0",
+    "eslint": "^3.19.0",
+    "eslint-config-standard": "^10.2.1",
+    "eslint-plugin-import": "^2.2.0",
+    "eslint-plugin-node": "^4.2.2",
+    "eslint-plugin-promise": "^3.5.0",
+    "eslint-plugin-standard": "^3.0.1",
     "istanbul": "^0.4.4",
     "mocha": "^3.0.1",
-    "mockgoose": "^6.0.6"
+    "mockgoose": "^7.1.1"
   }
 }
