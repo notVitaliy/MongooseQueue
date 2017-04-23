@@ -1,6 +1,6 @@
 {
-  "name": "mongoose-queue",
-  "version": "1.0.0",
+  "name": "mongoosequeue",
+  "version": "1.0.1",
   "description": "A simple queue using mongoose.",
   "main": "index.js",
   "scripts": {
